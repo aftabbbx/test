@@ -6,5 +6,5 @@
 
 <ion-content [fullscreen]="true">
   <ion-button (click)="get_photo()">Camera</ion-button>
-  <ion-img [src]="img.dataUrl" *ngif="img"></ion-img>
+  <ion-img [src]="img.webPath" *ngif="img"></ion-img>
 </ion-content>
