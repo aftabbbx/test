@@ -1,0 +1,10 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="get_photo()">Camera</ion-button>
+  <ion-img [src]="img.dataUrl" *ngif="img"></ion-img>
+</ion-content>
